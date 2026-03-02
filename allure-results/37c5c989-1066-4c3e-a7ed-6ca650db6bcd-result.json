@@ -1,0 +1,61 @@
+{
+  "uuid": "37c5c989-1066-4c3e-a7ed-6ca650db6bcd",
+  "historyId": "a75b469e35c2208b9d7bc494275d5cc9",
+  "fullName": "org.example.ex03_Selenium_Locator.TS011_Mini_Project.App_vwo",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.example.ex03_Selenium_Locator.TS011_Mini_Project"
+    },
+    {
+      "name": "testClass",
+      "value": "org.example.ex03_Selenium_Locator.TS011_Mini_Project"
+    },
+    {
+      "name": "testMethod",
+      "value": "App_vwo"
+    },
+    {
+      "name": "parentSuite",
+      "value": "All Test Suite"
+    },
+    {
+      "name": "suite",
+      "value": "C:/Users/pc/IdeaProjects/LearningSeleniumATB15x/src/test/java/org/example/ex03_Selenium_Locator/TS011_Mini_Project.java"
+    },
+    {
+      "name": "subSuite",
+      "value": "org.example.ex03_Selenium_Locator.TS011_Mini_Project"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-3LF4F4L"
+    },
+    {
+      "name": "thread",
+      "value": "22904@DESKTOP-3LF4F4L.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "testng"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "App_vwo",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1772433909063,
+  "stop": 1772433920663
+}
