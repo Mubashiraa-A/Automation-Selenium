@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class TS016_Mini_project__Xpath_Function {
+public class TS016_Mini_Project_Xpath_Function {
 
     @Test
     public void Ketalon_Cura() throws InterruptedException {
