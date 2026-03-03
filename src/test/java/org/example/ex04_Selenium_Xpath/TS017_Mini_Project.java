@@ -54,13 +54,11 @@ public class TS017_Mini_Project {
         WebElement continue_transfer_btn= driver.findElement(By.xpath("//button[text()='Confirm Transfer']"));
         continue_transfer_btn.click();
 
-
 // back to dashboard
         Thread.sleep(1000);
         WebElement dashboard_btn = driver.findElement(By.xpath("//button[text()='Dashboard']"));
         dashboard_btn.click();
         Thread.sleep(2000);
-
 
 // checking expected vs actual
         WebElement total_balance = driver.findElement(By.xpath("//h3[contains(@class,'mt-2 text-3xl font-bold')]"));
