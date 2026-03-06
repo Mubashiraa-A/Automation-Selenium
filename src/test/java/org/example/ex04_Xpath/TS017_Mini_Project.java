@@ -1,4 +1,4 @@
-package org.example.ex04_Selenium_Xpath;
+package org.example.ex04_Xpath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -64,6 +64,7 @@ public class TS017_Mini_Project {
         WebElement total_balance = driver.findElement(By.xpath("//h3[contains(@class,'mt-2 text-3xl font-bold')]"));
         Assert.assertEquals(total_balance.getText(),"$45,000.00");
 
+        Thread.sleep(2000);
         driver.quit();
 
     }

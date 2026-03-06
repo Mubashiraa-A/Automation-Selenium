@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true"
           name="C:/Users/pc/IdeaProjects/LearningSeleniumATB15x/src/test/java/org/example/ex03_Selenium_Locator/TS014_Katlon_Mini_Project.java">
         <classes>
-            <class name="org.example.ex03_Selenium_Locator.TS014_Katlon_Mini_Project">
+            <class name="org.example.ex03_Locator.TS014_Katlon_Mini_Project">
                 <methods>
                     <include name="Katalon_Loginpage"/>
                 </methods>

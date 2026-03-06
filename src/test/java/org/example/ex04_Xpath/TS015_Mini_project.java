@@ -1,4 +1,4 @@
-package org.example.ex04_Selenium_Xpath;
+package org.example.ex04_Xpath;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
