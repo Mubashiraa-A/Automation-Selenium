@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/pc/IdeaProjects/LearningSeleniumATB15x/src/test/java/org/example/ex10_Action_class/TS032_Booking_com.java"><classes><class name="org.example.ex10_Action_class.TS032_Booking_com"><methods><include name="Booking_com"/></methods></class></classes></test></suite>
