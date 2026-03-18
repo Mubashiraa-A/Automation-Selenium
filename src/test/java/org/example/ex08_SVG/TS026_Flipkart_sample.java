@@ -1,6 +1,6 @@
 package org.example.ex08_SVG;
 
-import org.example.Utilities.Common_To_All;
+import org.example.Utilities.Wait_helper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class TS026_Flipkart_sample extends Common_To_All {
+public class TS026_Flipkart_sample extends Wait_helper {
 
     @Test
     public void Flipkart_Search_SVG() throws InterruptedException {

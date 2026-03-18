@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class Common_To_All {
+public class Wait_helper {
      public ChromeDriver driver;
 
     public void OpenBrowser(WebDriver driver, String url) {
@@ -23,12 +23,15 @@ public class Common_To_All {
 
     }
 
-
-
-    public void WaitForVisibility(WebDriver driver, int timeouts, String locator) {
-
+    public static WebElement  ElementToBeClickable(WebDriver driver, int timeouts, By locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeouts));
-        wait.until(ExpectedConditions.elementToBeClickable(By.id(locator)));
+        return  wait.until(ExpectedConditions.elementToBeClickable(locator));
+
+    }
+    public static  WebElement VisibilityOfElementLocated(WebDriver driver, int timeouts,By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeouts));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
     }
 
     public void CLoseBrowser(WebDriver driver) {

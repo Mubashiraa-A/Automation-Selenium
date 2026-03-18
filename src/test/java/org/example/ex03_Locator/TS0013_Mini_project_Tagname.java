@@ -36,8 +36,8 @@ public class TS0013_Mini_project_Tagname {
         WebElement email_input_box= driver.findElement(By.id("page-v1-step1-email"));
         email_input_box.sendKeys("Admin");
 
-        WebElement checkbox= driver.findElement(By.name("gdpr_consent_checkbox"));
-        checkbox.click();
+//        WebElement checkbox= driver.findElement(By.name("gdpr_consent_checkbox"));
+//        checkbox.click();
 
         WebElement create_account= driver.findElement(By.tagName("button"));
         create_account.click();

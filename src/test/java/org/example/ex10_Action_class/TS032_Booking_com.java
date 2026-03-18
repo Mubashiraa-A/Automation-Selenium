@@ -26,13 +26,14 @@ public class TS032_Booking_com {
 //        driver.findElement(By.id("flights")).click();
         Thread.sleep(2000);
 
-        WebElement destination = driver.findElement(By.xpath("//button[@data-ui-name='input_location_to_segment_0']"));
+        WebElement destination = driver.findElement(By.xpath("//button[@data-ui-name=\"input_location_to_segment_0\"]"));
 
 //        WebElement type_destination= driver.findElement(By.xpath("//div[@class='AutoComplete-module__wrapper___d3PlU']/div[2]"));
         Thread.sleep(2000);
 
         Actions actions = new Actions(driver);
-        actions.moveToElement(destination).click().sendKeys("Delhi").keyDown(Keys.TAB).keyUp(Keys.ENTER).perform();
+        actions.moveToElement(destination).sendKeys(destination, "del").keyDown(Keys.TAB).keyUp(Keys.ENTER).perform();
+        Thread.sleep(2000);
 
         wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//button[.//span[normalize-space()='Explore']]"))).click();
