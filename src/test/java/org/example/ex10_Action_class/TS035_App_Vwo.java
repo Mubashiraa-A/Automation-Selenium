@@ -1,10 +1,7 @@
 package org.example.ex10_Action_class;
 
 import org.example.Utilities.Wait_helper;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -97,13 +94,33 @@ public class TS035_App_Vwo extends Wait_helper {
 
 
                 WebElement copy_btn = Wait_helper.VisibilityOfElementLocated(driver, 30, By.cssSelector("button[data-qa='xugejexijo']"));
-                 actions.moveToElement(copy_btn).keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).click().perform();
+//                 actions.moveToElement(copy_btn).keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).click().perform();
 
+                String expected_text = copy_btn.getAttribute("textContent"); // gives the full text
 
+                driver.switchTo().newWindow(WindowType.TAB); // switching to another window dynamically
+                driver.get("https://www.google.com");
+                WebElement dest = driver.findElement(By.xpath("//*[@name = 'q']"));
+                dest.click();
+
+                //Now pasting
+                actions.keyDown(Keys.CONTROL)
+                        .sendKeys("v")
+                        .keyUp(Keys.CONTROL)
+                        .build()
+                        .perform();
+
+                String paste_text = dest.getAttribute("value");
+
+                if(paste_text.contains("visualwebsiteoptimizer")) {
+                    System.out.println("Test exe successfully");
+                } else {
+                    System.out.println("Failed to copy");
+                }
                 System.out.println("copy Text:" + copy_btn.getText());
 
 //              Assert.assertEquals(copy_btn.getText(),"" );
-//              driver.quit();
+              driver.quit();
             }
 
     }
